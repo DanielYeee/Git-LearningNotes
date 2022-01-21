@@ -1,4 +1,4 @@
-﻿## Git-常用命令
+﻿﻿## Git-常用命令
 
 > Git 是一个版本控制工具，通过版本迭代来进行内容的更新,
 > 并且存储关于该内容的所有版本
@@ -38,10 +38,25 @@
 ##### 6.本地修改文件后保存版本并上传到远程仓库
 
 ``` git add filename ```
-``` git commit -m '描述信息'```
-``` git push origin master```
+``` git commit -m '描述信息' ```
+``` git push origin master ```
+
+***
 
 ##### 7.查看当前的远程仓库
 
 ``` git remote -v ```
 
+***
+
+##### 8. 区别与覆盖
+
+###### 假设：工作区（a）、暂存区（b）、HEAD (c）
+
+> git diff		    	 			比较 a 和 b
+> git diff --cache 			比较 b 和 c
+> git diff  HEAD        		比较 a 和 c	
+
+> git reset HEAD						c 覆盖 b
+> git checkout --  filename 		b 覆盖 a
+> git checkout HEAD 				c 覆盖 a，b	
