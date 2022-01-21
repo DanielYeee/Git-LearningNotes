@@ -41,5 +41,7 @@
 ``` git commit -m '描述信息'```
 ``` git push origin master```
 
+##### 7.查看当前的远程仓库
 
+``` git remote -v ```
 
